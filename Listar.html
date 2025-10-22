@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Listar Usuario</title>
+  <script>
+    function buscarUsuario(nombre) {
+      alert("Buscando información de " + nombre);
+    }
+
+    function editarUsuario(nombre) {
+      alert("Editando datos de " + nombre);
+    }
+
+    function borrarUsuario(nombre) {
+      alert("Eliminando usuario " + nombre);
+    }
+  </script>
+</head>
+<body>
+
+  <h2>Listar Usuario</h2>
+
+  <table border="1" cellpadding="8">
+    <tr>
+      <th>Nombre</th>
+      <th>Usuario</th>
+      <th>Acciones</th>
+    </tr>
+    <tr>
+      <td>Nombre1</td>
+      <td>usuario1</td>
+      <td>
+        <button onclick="buscarUsuario('Nombre1')">🔍</button>
+        <button onclick="editarUsuario('Nombre1')">✏️</button>
+        <button onclick="borrarUsuario('Nombre1')">🗑️</button>
+      </td>
+    </tr>
+    <tr>
+      <td>Nombre2</td>
+      <td>usuario2</td>
+      <td>
+        <button onclick="buscarUsuario('Nombre2')">🔍</button>
+        <button onclick="editarUsuario('Nombre2')">✏️</button>
+        <button onclick="borrarUsuario('Nombre2')">🗑️</button>
+      </td>
+    </tr>
+    <tr>
+      <td>Nombre3</td>
+      <td>usuario3</td>
+      <td>
+        <button onclick="buscarUsuario('Nombre3')">🔍</button>
+        <button onclick="editarUsuario('Nombre3')">✏️</button>
+        <button onclick="borrarUsuario('Nombre3')">🗑️</button>
+      </td>
+    </tr>
+  </table>
+
+  <br>
+  <a href="indice.html">Volver</a>
+
+</body>
+</html>
